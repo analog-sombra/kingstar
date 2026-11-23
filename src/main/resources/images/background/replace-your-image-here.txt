@@ -1,0 +1,10 @@
+Put your custom images in this folder with these exact file names:
+
+1) login-background.jpg
+   - Used as full window background
+
+2) login-illustration.jpg
+   - Used on the right side panel of the login card
+
+Full folder path:
+src/main/resources/images/background/

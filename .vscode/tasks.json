@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile JavaFX",
+      "type": "shell",
+      "command": "javac",
+      "args": [
+        "--module-path",
+        "C:/tools/javafx-sdk-27.0.1/lib",
+        "--add-modules",
+        "javafx.controls,javafx.fxml",
+        "${file}"
+      ],
+      "problemMatcher": ["$javac"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Run JavaFX",
+      "type": "shell",
+      "command": "java",
+      "args": [
+        "--module-path",
+        "C:/tools/javafx-sdk-27.0.1/lib",
+        "--add-modules",
+        "javafx.controls,javafx.fxml",
+        "--enable-native-access=javafx.graphics",
+        "HomePage"
+      ],
+      "dependsOn": "Compile JavaFX",
+      "isBackground": false,
+      "group": {
+        "kind": "test"
+      }
+    }
+  ]
+}

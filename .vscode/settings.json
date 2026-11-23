@@ -1,0 +1,10 @@
+{
+  "java.project.referencedLibraries": [
+    "C:/tools/javafx-sdk-27.0.1/lib/*"
+  ],
+  "java.completion.filteredTypes": [
+    "java.awt.*",
+    "com.sun.*"
+  ],
+  "java.configuration.updateBuildConfiguration": "interactive"
+}
